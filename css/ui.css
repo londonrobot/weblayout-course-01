@@ -1,0 +1,362 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 500;
+  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out, color 200ms ease-in-out;
+  outline: none;
+}
+
+.btn-ico {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+
+.btn-hero {
+  padding: 25px 54px;
+  border-radius: 40px;
+  background-color: #6D31EE;
+  border: 2px solid #6D31EE;
+  color: white;
+  font-size: 20px;
+}
+
+.btn-hero:hover {
+  background-color: #AA9DFA;
+  border: 2px solid #AA9DFA;
+}
+
+.btn-hero:focus {
+  border: 2px solid #4F28A5;
+  background-color: #AA9DFA;
+}
+
+.btn-hero:active {
+  background-color: #4F28A5;
+  border: 2px solid #4F28A5;
+}
+
+
+.btn-second {
+  padding: 25px 54px;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 2px solid #6D31EE;
+  color: #6D31EE;
+  font-size: 20px;
+}
+
+.btn-second:hover {
+  background-color: #6D31EE;
+  border: 2px solid #6D31EE;
+  color: white;
+}
+
+.btn-second:focus {
+  background-color: #AA9DFA;
+  border: 2px solid #6D31EE;
+  color: white;
+}
+
+.btn-second:active {
+  background-color: #4F28A5;
+  border: 2px solid #4F28A5;
+  color: white;
+}
+
+
+.btn-second-dark {
+  padding: 12px 19.5px;
+  border-radius: 77px;
+  background-color: transparent;
+  border: 2px solid #AA9DFA;
+  color: #AA9DFA;
+  font-size: 16px;
+}
+
+.btn-second-dark:hover {
+  background-color: #AA9DFA;
+  border: 2px solid #AA9DFA;
+  color: white;
+}
+
+.btn-second-dark:focus {
+  background-color: #6D31EE;
+  border: 2px solid #6D31EE;
+  color: white;
+}
+
+.btn-second-dark:active {
+  background-color: #4F28A5;
+  border: 2px solid #4F28A5;
+  color: white;
+}
+
+
+.btn-promo {
+  position: relative;
+  padding: 25px 13.5px 25px 41.5px;
+  border-radius: 100px;
+  border: 2px solid #F0D288;
+  background-color: transparent;
+  color: #F0D288;
+  font-size: 20px;
+}
+
+.btn-promo-ico {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-48%);
+  left: 13.5px;
+}
+
+.btn-promo-ico-outside {
+  fill: #F0D288;
+  transition: fill 200ms ease-in-out;
+}
+
+.btn-promo-ico-inside {
+  fill: #121723;
+  transition: fill 200ms ease-in-out;
+}
+
+.btn-promo:hover {
+  background-color: #F0D288;
+  border: 2px solid #F0D288;
+  color: #121723;
+}
+
+.btn-promo:hover .btn-promo-ico-outside {
+  fill: #121723;
+}
+
+.btn-promo:hover .btn-promo-ico-inside {
+  fill: #F0D288;
+}
+
+.btn-promo:focus {
+  background-color: #BB973E;
+  border: 2px solid #F0D288;
+  color: #121723;
+}
+
+.btn-promo:focus .btn-promo-ico-outside {
+  fill: #F0D288;
+}
+
+.btn-promo:focus .btn-promo-ico-inside {
+  fill: #121723;
+}
+
+.btn-promo:active {
+  background-color: #BB973E;
+  border: 2px solid #BB973E;
+  color: #121723;
+}
+
+.btn-promo:active .btn-promo-ico-outside {
+  fill: #121723;
+}
+
+.btn-promo:active .btn-promo-ico-inside {
+  fill: #BB973E;
+}
+
+
+.ico-search {
+  width: 24px;
+  height: 24px;
+}
+
+.ico-search-stroke {
+  stroke: #6D31EE;
+  transition: stroke 200ms ease-in-out;
+}
+
+.ico-search:hover .ico-search-stroke {
+  stroke: #AA9DFA;
+}
+
+.ico-search:focus .ico-search-stroke {
+  stroke: #AA9DFA;
+}
+
+.ico-search:active .ico-search-stroke {
+  stroke: #4F28A5;
+}
+
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.ico-social {
+  fill: #D2D5DD;
+  transition: fill 200ms ease-in-out;
+}
+
+.social-icon:hover .ico-social{
+  fill: #6D31EE;
+}
+
+.social-icon:focus .ico-social {
+  fill: #AA9DFA;
+}
+
+.social-icon:active .ico-social {
+  fill: #4F28A5;
+}
+
+
+.link-block {
+  color: #121723;
+  font-weight: 400;
+  line-height: 1;
+  background-color: transparent;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  outline: none;
+}
+
+.link-block:hover {
+  color: #6D31EE;
+  background-color: transparent;
+}
+
+.link-block:focus {
+  background-color: #AA9DFA;
+  color: white;
+}
+
+.link-block:active {
+  color: #4F28A5;
+  background-color: transparent;
+}
+
+
+.link-header {
+  padding: 4px 10px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.link-16px {
+  font-size: 16px;
+  padding: 3px 5.5px 1px;
+  font-style: normal;
+}
+
+.link-arrow {
+  position: relative;
+  font-size: 16px;
+  font-style: italic;
+  padding: 2px 30px 2px 2px;
+}
+
+.link-arrow-ico {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-48%);
+  right: 2px;
+}
+
+.link-arrow-ico-filled {
+  fill: #121723;
+  transition: fill 200ms ease-in-out;
+}
+
+.link-arrow:hover .link-arrow-ico-filled {
+  fill: #6D31EE;
+}
+
+.link-arrow:focus .link-arrow-ico-filled {
+  fill: white;
+}
+
+.link-arrow:active .link-arrow-ico-filled {
+  fill: #4F28A5;
+}
+
+
+.link-colored {
+  display: inline-block;
+  padding: 4px 2px;
+  border-bottom: 1px solid transparent;
+  color: #6D31EE;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+
+  background-color: transparent;
+  transition:
+    background-color 200ms ease-in-out,
+    color 200ms ease-in-out,
+    border-color 200ms ease-in-out;
+  outline: none;
+}
+
+.link-colored:hover {
+  color: #6D31EE;
+  background-color: transparent;
+  border-bottom: 1px solid #6D31EE;
+}
+
+.link-colored:focus {
+  background-color: #AA9DFA;
+  color: white;
+  border-bottom: 1px solid transparent;
+}
+
+.link-colored:active {
+  color: #4F28A5;
+  background-color: transparent;
+  border-bottom: 1px solid #4F28A5;
+}
+
+
+.form-input {
+  display: block;
+  width: 450px;
+  height: 70px;
+  padding: 25px 32px;
+
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+
+  border-radius: 40px;
+  border: 1px solid #FFF;
+  background-color: transparent;
+  outline: none;
+  transition:
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out;
+}
+
+.form-input::placeholder {
+  color: #A1A6B4;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-input:hover {
+  background-color: #292E39;
+}
+
+.form-input:focus {
+  background-color: #292E39;
+  border-color: #AA9DFA;
+}
+
+.form-input:focus::placeholder {
+  display: none;
+}
