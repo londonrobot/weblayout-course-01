@@ -17,7 +17,7 @@
 
 
 .btn-hero {
-  padding: 25px 54px;
+  padding: 23.5px 50px;
   border-radius: 40px;
   background-color: #6D31EE;
   border: 2px solid #6D31EE;
@@ -99,7 +99,7 @@
 
 .btn-promo {
   position: relative;
-  padding: 25px 13.5px 25px 41.5px;
+  padding: 25px 8.5px 25px 38.5px;
   border-radius: 100px;
   border: 2px solid #F0D288;
   background-color: transparent;
@@ -109,9 +109,9 @@
 
 .btn-promo-ico {
   position: absolute;
-  top: 50%;
+  top: 52%;
   transform: translateY(-48%);
-  left: 13.5px;
+  left: 10px;
 }
 
 .btn-promo-ico-outside {
@@ -166,6 +166,10 @@
   fill: #BB973E;
 }
 
+
+.btn-ico svg {
+  display: block;
+}
 
 .ico-search {
   width: 24px;
@@ -254,7 +258,7 @@
   position: relative;
   font-size: 16px;
   font-style: italic;
-  padding: 2px 30px 2px 2px;
+  padding: 2px 26px 2px 2px;
 }
 
 .link-arrow-ico {
@@ -318,10 +322,9 @@
   border-bottom: 1px solid #4F28A5;
 }
 
-
 .form-input {
   display: block;
-  width: 450px;
+  width: 446px;
   height: 70px;
   padding: 25px 32px;
 

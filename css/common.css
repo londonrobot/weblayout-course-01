@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerLightItalic.woff2") format("woff2"),
+    url("../fonts/MullerLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerRegularItalic.woff2") format("woff2"),
+    url("../fonts/MullerRegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff2") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Muller", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--back-dark)
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+:root {
+  --back-light: #fff;
+  --back-gray: #E6E8EC;
+  --back-dark: #121723;
+  --back-darker: #292E39;
+
+  --gray-middle: #A1A6B4;
+  --black-dark: #121723;
+  --gray-lighter: #D2D5DD;
+  --gray-ultralight: #F5F6F7;
+  --white: white;
+
+  --beige-dark: #BB973E;
+  --beige-light: #F0D288;
+
+  --blue: #0039A6;
+  --red: #D52B1E;
+
+  --blue-violet-dark: #4F28A5;
+  --blue-violet-lighter: #6D31EE;
+  --blue-violet-lighter: #AA9DFA;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 45px;
+}
+
+.main-header {
+  color: var(--back-dark);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.second-header {
+  color: var(--back-dark);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* media */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+    padding: 0 38px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 600px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    min-width: 256px;
+    padding: 0 32px;
+  }
+
+  .main-header {
+    font-size: 32px;
+  }
+
+  .second-header {
+    font-size: 24px;
+  }
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.light-italic {
+  font-style: italic;
+  font-weight: 400;
+}
