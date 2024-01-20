@@ -110,6 +110,7 @@ p {
 
 .container {
   max-width: 1200px;
+  min-width: 256px;
   margin: 0 auto;
   padding: 0 45px;
 }
@@ -133,23 +134,24 @@ p {
 /* media */
 @media (max-width: 1200px) {
   .container {
-    max-width: 900px;
-    padding: 0 38px;
+    /* max-width: 900px; */
+    padding: 0 100px;
   }
 }
 
 @media (max-width: 900px) {
   .container {
-    max-width: 600px;
-    padding: 0 30px;
+    /* max-width: 600px; */
+    padding: 0 113px;
   }
 }
 
 @media (max-width: 575px) {
   .container {
-    min-width: 256px;
+    /* min-width: 256px; */
     padding: 0 32px;
   }
+
 
   .main-header {
     font-size: 32px;

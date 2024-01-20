@@ -19,20 +19,24 @@
   .header__nav {
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 1200px;
     border: 1px solid #E6E8EC;
     top: 80px;
     left: 0;
     right: 0;
-    height: 64px;
+    min-height: 64px;
     margin-left: 0;
   }
 
   .nav__container {
-    width: 842px;
+    /* width: 842px; */
+    width: calc(100% - 200px);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2px;
   }
@@ -59,12 +63,25 @@
     max-width: 255px;
   }
 
+  .broadcast__archieve {
+    max-width: 30%;
+  }
+
   .broadcast__cards {
     width: calc(255px * 2 + 30px);
   }
 
+  .b-card {
+    width: calc(50% - 15px);
+  }
+
   .guest__text {
     max-width: 536px;
+  }
+
+  .g-card__img {
+    object-fit: cover;
+    min-width: unset;
   }
 
   .playlist__wrapper {
@@ -86,7 +103,9 @@
 
   .pl-card__img {
     width: 112px;
-    height: 112px;
+    /* height: 112px; */
+    height: 100%;
+    object-fit: cover;
   }
 
   .pl-card__block {
@@ -137,6 +156,17 @@
     max-width: 540px;
   }
 
+  .about__desc::after {
+    background-image: url('../img/about-svg2.svg');
+    overflow-x: hidden;
+    top: 44px;
+    left: 568px;
+    /* width: 305px; */
+    width: calc(1000px - 200px - 568px);
+    height: 72%;
+    background-size: contain;
+  }
+
   .about__cards {
     flex-wrap: wrap;
   }
@@ -154,14 +184,18 @@
 
 @media (max-width: 900px) {
   .header__nav {
-    height: 60px;
+    min-height: 60px;
   }
 
   .nav__container {
     width: 556px;
+    width: calc(100% - 2 * 113px);
     margin-top: 0;
   }
 
+  .nav__link:not(:first-child) {
+    margin-left: 0;
+  }
   .link-header {
     padding: 3px 8px;
     font-size: 16px;
@@ -201,6 +235,7 @@
   }
 
   .broadcast__archieve {
+    max-width: unset;
     position: static;
     width: 100%;
     display: flex;
@@ -263,6 +298,7 @@
     max-width: 540px;
     margin-bottom: 0;
     display: block;
+    width: 100%;
   }
 
   .onewave__header {
@@ -271,6 +307,10 @@
 
   .onewave__content {
     width: 100%;
+  }
+
+  .a-card {
+    min-width: unset;
   }
 
   .about__img2-wrapper {
@@ -286,6 +326,8 @@
     content: "";
     position: absolute;
     bottom: -164px;
+    top: unset;
+    left: unset;
     right: 0;
     width: 655px;
     height: 142px;
@@ -347,11 +389,16 @@
     width: 100%;
     margin-right: 0;
     gap: 23px;
-    max-height: 120px;
+    /* max-height: 120px; */
   }
 
-  .footer__link {
+  /* .footer__link {
     margin-right: 128px;
+  } */
+
+  .footer__link {
+    margin-left: 0;
+    margin-right: calc(100% / 3 - 108px);
   }
 
   .footer__link--no-margin {
@@ -360,6 +407,10 @@
 }
 
 @media (max-width: 760px) {
+  .nav__container {
+    flex-wrap: nowrap;
+  }
+
   .broadcast__cards {
     width: 100%;
   }
@@ -380,7 +431,7 @@
 
   .pl-card__block {
     width: 113px;
-    height: 47px;
+    min-height: 47px;
     justify-content: start;
   }
 
@@ -408,12 +459,14 @@
 
   .nav__container {
     overflow-x: hidden;
-    padding-left: 22px;
+    /* padding-left: 22px; */
+    width: calc(100% - 2 * 32px);
+    padding-left: 0;
   }
 
   .header__nav {
     top: 55px;
-    height: 50px;
+    min-height: 50px;
   }
 
   .nav__link:not(:first-child) {
@@ -477,8 +530,8 @@
   }
 
   .b-card__content {
-    height: 99px;
-    padding: 8px 5px 10px 8px;
+    min-height: 99px;
+    padding: 8px 5px 20px 8px;
     position: relative;
   }
 
@@ -589,7 +642,11 @@
   }
 
   .onewave__header {
-    margin-bottom: 10px;
+    margin-bottom: 38px;
+  }
+
+  .onewave__header::after {
+    bottom: -20px;
   }
 
   .onewave__text {
@@ -725,7 +782,9 @@
   .footer__nav {
     position: relative;
     line-height: 1;
-    max-height: 166px;
+    columns: 2;
+    max-height: unset;
+    /* max-height: 166px; */
     gap: 20px;
     z-index: 3000;
   }
@@ -733,6 +792,8 @@
   .footer__link {
     font-size: 12px;
     margin-right: -6px;
+    margin-left: 0;
+    margin-right: 76px;
   }
 
   .footer__item:nth-last-of-type(-n + 4) .footer__link {
@@ -746,6 +807,7 @@
 }
 
 @media (max-width: 320px) {
+
   .p-card {
     flex-direction: column;
   }
@@ -754,6 +816,8 @@
     width: 100%;
     height: unset;
     object-fit: cover;
+    max-width: unset;
+    min-height: 72px;
   }
 
   .p-card__date {
