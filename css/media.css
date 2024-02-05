@@ -99,6 +99,8 @@
 
   .pl-card {
     display: flex;
+    flex-direction: row;
+    width: calc(100% / 3 - 30px * 2);
   }
 
   .pl-card__img {
@@ -183,6 +185,7 @@
 }
 
 @media (max-width: 900px) {
+
   .header__nav {
     min-height: 60px;
   }
@@ -191,6 +194,7 @@
     width: 556px;
     width: calc(100% - 2 * 113px);
     margin-top: 0;
+    gap: unset;
   }
 
   .nav__link:not(:first-child) {
@@ -274,6 +278,10 @@
 
   .playlist__cards {
     margin-top: 32px;
+  }
+
+  .pl-card {
+    width: unset;
   }
 
   .onewave {
@@ -447,6 +455,10 @@
 }
 
 @media (max-width: 575px) {
+  .header {
+    padding: 0;
+  }
+
   .header__wrapper {
     height: 55px;
   }
@@ -458,7 +470,7 @@
   }
 
   .nav__container {
-    overflow-x: hidden;
+    overflow-x: auto;
     /* padding-left: 22px; */
     width: calc(100% - 2 * 32px);
     padding-left: 0;
