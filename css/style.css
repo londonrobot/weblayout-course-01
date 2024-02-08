@@ -31,7 +31,7 @@
 .nav__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 35px;
+  gap: 10px 39px;
 }
 /*
 .nav__link:not(:first-child) {
@@ -228,7 +228,7 @@
 .b-card__content {
   border: 1px solid var(--back-gray);
   background-color: var(--back-light);
-  padding: 20px 16px 15px;
+  padding: 20px 16px 19px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -676,7 +676,7 @@
 }
 
 .footer__wrapper {
-  margin-bottom: 111px;
+  margin-bottom: 87px;
   display: flex;
   justify-content: space-between;
 }
@@ -689,7 +689,7 @@
 .footer__social-list {
   margin-top: 20px;
   display: flex;
-  gap: 12px;
+  gap: 15px;
 
   max-width: 300px;
   flex-wrap: wrap;
@@ -703,9 +703,9 @@
 }
 
 .footer__nav {
-  margin-right: 18px;
+  /* margin-right: 18px; */
   columns: 3;
-  column-gap: 100px;
+  column-gap: 85px;
   /* display: flex;
   flex-direction: column;
   flex-wrap: wrap; */

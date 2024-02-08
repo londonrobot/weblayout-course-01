@@ -34,7 +34,7 @@
 
   .nav__container {
     /* width: 842px; */
-    width: calc(100% - 200px);
+    width: calc(100% - 180px);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -64,7 +64,7 @@
   }
 
   .broadcast__archieve {
-    max-width: 30%;
+    max-width: 32%;
   }
 
   .broadcast__cards {
@@ -81,7 +81,7 @@
 
   .g-card__img {
     object-fit: cover;
-    min-width: unset;
+    /* min-width: unset; */
   }
 
   .playlist__wrapper {
@@ -100,7 +100,8 @@
   .pl-card {
     display: flex;
     flex-direction: row;
-    width: calc(100% / 3 - 30px * 2);
+    width: 254px;
+    /* width: calc(100% / 3 - 30px * 2); */
   }
 
   .pl-card__img {
@@ -192,7 +193,7 @@
 
   .nav__container {
     width: 556px;
-    width: calc(100% - 2 * 113px);
+    width: calc(100% - 2 * 105px);
     margin-top: 0;
     gap: unset;
   }
@@ -358,7 +359,7 @@
   }
 
   .footer__wrapper {
-    margin-bottom: 95px;
+    margin-bottom: 75px;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -370,7 +371,7 @@
 
   .footer__social-list {
     margin-bottom: 78px;
-    gap: 21px;
+    gap: 20px;
   }
 
   .footer__social-item {
@@ -396,7 +397,7 @@
   .footer__nav {
     width: 100%;
     margin-right: 0;
-    gap: 23px;
+    gap: 155px;
     /* max-height: 120px; */
   }
 
@@ -406,7 +407,8 @@
 
   .footer__link {
     margin-left: 0;
-    margin-right: calc(100% / 3 - 108px);
+    margin-bottom: 25px;
+    /* margin-right: calc(100% / 3 - 108px); */
   }
 
   .footer__link--no-margin {
@@ -452,6 +454,10 @@
     font-size: 9px;
   }
 
+  .g-card__img {
+    min-width: unset;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -472,7 +478,7 @@
   .nav__container {
     overflow-x: auto;
     /* padding-left: 22px; */
-    width: calc(100% - 2 * 32px);
+    width: calc(100% - 2 * 22px);
     padding-left: 0;
   }
 
@@ -805,7 +811,8 @@
     font-size: 12px;
     margin-right: -6px;
     margin-left: 0;
-    margin-right: 76px;
+    /* margin-right: 76px; */
+    margin-bottom: 20px;
   }
 
   .footer__item:nth-last-of-type(-n + 4) .footer__link {
